@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Bold.eot");
+  src: url("../fonts/Gelion/Gelion-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-Bold.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-Bold.ttf") format("truetype"), url("../fonts/Gelion/Gelion-Bold.svg#Gelion-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-SemiBold.eot");
+  src: url("../fonts/Gelion/Gelion-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-SemiBold.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-SemiBold.ttf") format("truetype"), url("../fonts/Gelion/Gelion-SemiBold.svg#Gelion-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Medium.eot");
+  src: url("../fonts/Gelion/Gelion-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-Medium.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-Medium.ttf") format("truetype"), url("../fonts/Gelion/Gelion-Medium.svg#Gelion-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Regular.eot");
+  src: url("../fonts/Gelion/Gelion-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-Regular.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-Regular.ttf") format("truetype"), url("../fonts/Gelion/Gelion-Regular.svg#Gelion-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot");
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RedHatDisplay/RedHatDisplay-Bold.woff") format("woff"), url("../fonts/RedHatDisplay/RedHatDisplay-Regular.ttf") format("truetype"),
+    url("../fonts/RedHatDisplay/RedHatDisplay-Regular.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --text-color: #4b4f51;
+  --red: #fb4c47;
+  --light-red: rgba(250, 86, 82, 0.15);
+  --green: #035755;
+  --white: #fff;
+}
+
+body {
+  font-family: "Gelion", sans-serif;
+  font-size: 18px;
+  line-height: 2.21;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.2;
+
+  color: var(--green);
+}
+
+.btn {
+  border: 2px solid var(--red);
+  border-radius: 46px;
+  padding-top: 16px;
+  padding-right: 45px;
+  padding-bottom: 17px;
+  padding-left: 45px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--red);
+
+  background-color: transparent;
+}
+
+.logo {
+  font-family: "Red Hat Display";
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1.315;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--green);
+}
+
+.menu-link {
+  color: var(--green);
+}
+
+.menu-link:hover {
+  color: var(--red);
+}
+
+.page-title {
+  font-size: 32px;
+
+  color: var(--red);
+}
+
+.section-title {
+  font-size: 64px;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.47;
+}
+
+.hero-content {
+  font-size: 24px;
+  line-height: 1.9;
+}
+
+.coronavirus {
+  font-size: 20px;
+  line-height: 2.15;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo span {
+  margin-left: 13px;
+}
+
+.social-list {
+  display: inline-flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-icon {
+  fill: var(--green);
+}
+
+.social-icon:hover {
+  fill: var(--red);
+}
+
+.menu {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.page-header {
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-header .btn {
+  margin-left: 40px;
+}
+
+.content-box {
+  width: 50%;
+}
+
+.contagion-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contagion-item {
+  width: calc((100% - 30px * 2) / 3);
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.contagion-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.what-we-do-list {
+  counter-reset: item;
+}
+
+.what-we-do-item {
+  counter-increment: item;
+}
+
+.what-we-do-item .content-box {
+  position: relative;
+  padding-left: 120px;
+  padding-right: 60px;
+}
+
+.what-we-do-item .content-box:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "0" counter(item);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--red);
+  background-color: rgba(250, 86, 82, 0.15);
+}
+
+.what-we-do-item:nth-child(2n) .content-box {
+  margin-left: auto;
+}
